@@ -1,0 +1,6 @@
+{"cells":[
+{"cellId":2,"useDatabase":"memory","query":"create table bb100 as\nselect * from\nread_csv(\"D:\\opendata\\BillboardHot100\\Billboard_Hot_100.csv\")"},
+{"cellId":5,"useDatabase":"memory","query":"SELECT * FROM bb100 ORDER BY date DESC, rank LIMIT 5;"},
+{"cellId":3,"useDatabase":"memory","query":"-- Any complete row duplicates?\nSELECT *\nFROM bb100\nGROUP BY ALL \nHAVING COUNT(*) > 1"},
+{"cellId":4,"useDatabase":"memory","query":"-- Is date and rank unique?  It seems like it should be\nSELECT date, rank, COUNT(*) AS N\nFROM bb100\nGROUP BY ALL \nHAVING COUNT(*) > 1\nORDER BY date DESC","isActive":true}
+],"currentDatabase":"memory","viewMode":{"mode":"default"},"version":35,"notebookSerializationFormat":3}
