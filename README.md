@@ -4,7 +4,7 @@ The DuckDB UI is great at quick and dirty SQL queries for DuckDB, however it lac
 
 The Jupyter notebooks in the repo allow you to export SQL code from DuckDB UI notebooks in either JSON format (how it is stored internally in a DuckDB database) or SQL format with line comments between each SQL cell.
 
-**NOTE**: You must terminate any duckdb -ui sessions before using these exporter utilites because any existing ui session will have a lock on the duckdb database that stores the notebooks and their queries.
+**NOTE**: You must terminate any duckdb -ui sessions before using these exporter utilites because any existing ui session will have a lock on the duckdb database that stores the notebooks and their sql cells.
 
 ## First Time Use
 
