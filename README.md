@@ -1,4 +1,6 @@
 # Python-DuckDB_notebook_exporter
+<!-- README updated on codex-test-branch. -->
+
 Export SQL code from DuckDB UI notebooks
 
 If you don't already have these packages installed:
